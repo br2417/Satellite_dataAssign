@@ -1,0 +1,81 @@
+
+/*The below creates a grey grid so that we can see the divs - the outline property that puts an outline on all divs
+ * I have commented it out for aesthetic purposes.. */
+
+/*
+div {
+	outline: 1px solid #CCCCCC;
+	background: #CCCCFF;
+}
+*/
+
+
+/*Below I make the background of the body of webpage light blue*/
+
+body {
+	
+	background:#CCCCFF;
+}
+
+/*This is the outermost div in our content markup */
+
+#main-content {
+	width: 960px;
+	height: 600px;
+	
+}
+
+.button-holder {
+	float: left; 
+}
+
+/* For this assignment I have changed the colors and font of the text in the buttons. 
+ * I used Googe Fonts to have a better selection - in my HTML file you will see a link to the Google Font library where the "Allerta"
+ * font is sourced from.
+ */
+
+.button {
+	width: 90px;
+	padding: 8px;
+	margin: 4px;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	background-color : blue;
+	font-family: 'Allerta', serif;
+    font-size: 20px;
+	
+}
+
+/*Again, for the headline of the webpage I chose a the "Roboto" Google font, positioned it the centre, and gave it an orange color */
+.title {
+	font-family : 'Roboto', serif;
+	text-align: center;
+	color: #FF6600;
+
+	
+}
+/* I changed the colors of the buttons for when the 'disabled' function is applied to them - when this is applied the box will turn yellow
+ * and have a gray border and gray text. */
+
+.disabled {
+	cursor: default; 
+	border-color: gray;
+	color: gray;
+	background: #FFCC00;
+}
+
+/* Here I changed the size of the image holder div to better fit my images. I initially put a colored border around it but had to remove it
+ * because the images I chose are actually of slightly different sizes - so when you clicked through the slideshow the border would sometimes not fit. 
+ * I tried to look for a way to include a border that would automatcally readjust to fit around the image... Haven't found it yet - will require
+ * more Google searching! */
+
+.image-holder {
+	width: 585px;
+	height: 390px;
+	float: right;
+}
